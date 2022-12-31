@@ -1,0 +1,196 @@
+:root {
+  --web-dark: #19283f;
+  --web-green: #33d1cc;
+  --web-red: #ff3150;
+  --web-yello: #ffc400;
+  --web-gray: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-btn,
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--web-red);
+  color: var(--web-yello);
+  padding: 0.5rem 1rem;
+}
+.main-title img {
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  background-color: var(--web-green);
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* img{
+  height: 200px;
+  width:200px;
+} */
+/*---------------Start Navbar--------------- */
+.navbar {
+  background-color: var(--web-dark);
+  /* color:#fff */
+}
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-brand {
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--web-green);
+}
+.navbar .search {
+  border-left: 1px solid var(--web-green);
+}
+.navbar .search svg {
+  color: var(--web-green);
+}
+.navbar .navbar-toggler {
+  color: #fff;
+  font-size: 25px;
+  border-color: #fff;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+/*---------------End Navbar--------------- */
+/*---------------Statr landing--------------- */
+.landing {
+  background-color: var(--web-dark);
+  min-height: calc(100vh - 56px);
+}
+/*---------------End landing ---------------*/
+/*---------------Start featuers ---------------*/
+.featuers .icon-head {
+  height: 200px;
+}
+.featuers .icon-head svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.featuers .feat .number {
+  font-size: 12rem;
+  color: var(--web-gray);
+}
+.featuers .feat .icon {
+  color: var(--web-green);
+}
+.featuers h3 {
+  color: var(--web-yello);
+}
+/*---------------End featuers--------------- */
+/*---------------Start our-work--------------- */
+.our-work {
+  background-color: var(--web-gray);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-work ul li.active {
+  background-color: var(--web-red);
+  color: var(--web-yello);
+}
+.our-work ul li:not(.active):hover {
+  color: var(--web-red);
+}
+.our-work .box {
+  position: relative;
+  overflow: hidden;
+}
+.our-work .box::before {
+  content: attr(text-att);
+  position: absolute;
+  background-color: rgb(51 209 204 / 56%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--web-yello);
+  transition: 0.4s;
+  transform: translateX(-100%);
+}
+.our-work .box:hover::before {
+  transform: translate(0);
+}
+.our-work .row img{
+  width: 400px;
+  height:250px;
+}
+
+/*---------------End our-work--------------- */
+/*---------------Start Team--------------- */
+.Team {
+  background-color: var(--web-gray);
+}
+.Team h3 {
+  color: var(--web-yello);
+}
+.Team .box h2 {
+  background-color: var(--web-green);
+  
+}
+/*---------------End Team--------------- */
+/*---------------Start Project--------------- */
+.group-techs{
+  background-color:var(--web-dark);
+}
+/*---------------End Project--------------- */
+/*---------------start Subscrip--------------- */
+.Subscrip{
+  background-color:var(--web-yello)
+}
+.Subscrip input[type="email"]{
+  border:none;
+  border-bottom: 1px solid white;
+}
+.Subscrip input[type="email"]:focus{
+  outline: none;
+}
+.Subscrip ::placeholder{
+  color:white
+}
+.Subscrip .btn-sub{
+  background-color:var(--web-dark);
+  color:var(--web-yello)
+}
+/*---------------End Subscrip--------------- */
+/*---------------Srtart Footer--------------- */
+.footer{
+  background-color:var(--web-dark)
+}
+.footer .copyright > span{
+  color:var(--web-green)
+}
+.footer .copyright div span{
+  color:var(--web-yello)
+}
+.footer .contact ul li a svg{
+  width: 20px;
+  height:20px
+}
+.footer .Facebook {
+  background-color: #1877f2;
+}
+.footer .google{
+  background-color: #34a853;
+}
+.footer .twitter{
+  background-color: #657786;
+}
+.footer .youtube{
+  background-color: #ff0000;
+}
+/*---------------End Footer--------------- */
+
